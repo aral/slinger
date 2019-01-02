@@ -331,18 +331,18 @@ module WindowActions {
 					if (i < leftCount) {
 						return {
 							pos: {
-								x: 0,
-								y: i*leftHeight
+								x: 20,
+								y: i*leftHeight + 20
 							},
-							size: { x: width, y: leftHeight },
+							size: { x: width - 40, y: leftHeight - 40 },
 						}
 					} else {
 						return {
 							pos: {
-								x: width,
-								y: (i-leftCount)*rightHeight
+								x: width + 20,
+								y: (i-leftCount)*rightHeight + 20
 							},
-							size: { x: width, y: rightHeight },
+							size: { x: width - 40, y: rightHeight - 40 },
 						}
 					}
 				});
