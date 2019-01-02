@@ -142,10 +142,10 @@ module GnomeSystem {
 		}
 		let rect = Rect.move(workspaceRect, workspaceOffset(win));
 		win.move_resize_frame(true,
-			rect.pos.x,
-			rect.pos.y,
-			rect.size.x,
-			rect.size.y);
+			rect.pos.x + 20,
+			rect.pos.y + 20,
+			rect.size.x - 40,
+			rect.size.y - 40);
 	}
 
 	export function currentWindow(): MetaWindow {
